@@ -1,0 +1,71 @@
+/* All.css */
+
+/* Base styles */
+.All {
+    background-color: #292524; /* Tailwind's bg-stone-900 equivalent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the background covers the entire viewport */
+  }
+  
+  /* Main container for the Todo app */
+  .Main {
+    background-color: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive styles */
+  
+  /* For very small screens (350px and below) */
+  @media (max-width: 350px) {
+    .Main {
+      width: 95%; /* Adjust width to fit small screens */
+      padding: 0.75rem;
+    }
+  
+    .py-4 {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+  
+    .text-[17px] {
+      font-size: 14px;
+    }
+  
+    .w-32 {
+      width: 70px;
+    }
+  
+    .h-14 {
+      height: 2.5rem;
+    }
+  
+    .h-80 {
+      height: 180px;
+    }
+  
+    .text-3xl {
+      font-size: 1.5rem;
+    }
+  
+    .ml-24 {
+      margin-left: 0;
+    }
+  
+    .p-7 {
+      padding: 0.5rem;
+    }
+  }
+  
+  /* For screens larger than 350px (default styling applies) */
+  @media (min-width: 351px) {
+    .Main {
+      width: 90%;
+    }
+  }
+  
